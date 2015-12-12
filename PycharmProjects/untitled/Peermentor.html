@@ -1,30 +1,137 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta charset="UTF-8">
-    <title>Peer Connect Ghana</title>
-</head>
-<body>
-    <div id=" header">
-        <p>PEER CONNECT GHANA</p></div>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>PeerConnectGhana</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        body {
+        font: 20px Montserrat, sans-serif;
+        line-height: 1.8;
+        color: #f5f6f7;
+        }
+        p {font-size: 16px;}
+        .margin {margin-bottom: 45px;}
+        .bg-1 {
+        background-color: #1abc9c; /* Green */
+        color: #ffffff;
+        }
+        .bg-2 {
+        background-color: #474e5d; /* Dark Blue */
+        color: #ffffff;
+        }
+        .bg-3 {
+        background-color: #ffffff; /* White */
+        color: #555555;
+        }
+        .bg-4 {
+        background-color: #2f2f2f; /* Black Gray */
+        color: #fff;
+        }
+        .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        }
+        .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+        }
+        .navbar-nav li a:hover {
+        color: #1abc9c !important;
+        }
+        .p1 {
+        color: blue;
+        font-family:  sans-serif;
+        font-style: bold;
+        font-size: 15px;
+        letter-spacing: 5px;
+        }
 
-    <table> </table>
-<div class="project-title">
-	<h3>{{ page.title }}</h3>
+        #section1 {color: #fff; background-color: #00bcd4;}
+        #section2 {color: #fff; background-color: #673ab7;}
+        #section3 {color: #fff; background-color: #ff9800;}
+
+
+        @media screen and (max-width: 810px) {
+        #section1, #section2, #section3, #section41, #section42 {
+        margin-left: 150px;
+        }
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">PEER CONNECT GHANA</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#section1">HOME</a></li>
+        <li><a href="#section2">APPLY NOW</a></li>
+        <li><a href="#section3">ABOUT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div id="section1"class="container-fluid bg-1 text-center">
+  <h3 class="margin">PEER CONNECT GHANA</h3>
+  <p> Peer Coonect Ghana is a peer mentoring group amied at......</p>
+  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
 </div>
-<div class="project-links">
-	<a href="{{ page.repository }}" class="project-link" target="_blank"><i class="fa fa-code-fork"></i> Repository</a>{% if page.website %} <a href="{{ page.website }}" class="project-link" target="_blank"><i class="fa fa-globe"></i> Website</a>{% endif %}
+
+<!-- Second Container -->
+<div id="section2"class="container-fluid bg-2 text-center">
+  <h3 class="margin">APPLY NOW </h3>
+    <p  href="http://Mentor_form.html"> Apply as a Mentee</p>
+    <p href="Mentor_form.html">Apply as a Mentor</p>
 </div>
-<div>
-	<p>Technologies used: {{ page.technologies }} | Project lead: <a href="https://github.com/{{ page.project_lead }}"  target="_blank">{{ page.project_lead }}</a></p>
-	<p>Project started on: <span class="date">{{ page.start_date | date: "%-d %B %Y" }}</span>{% if page.end_date %} | Project ended on: <span class="date">{{ page.end_date | date: "%-d %B %Y" }}</span>{% endif %}</p>
+
+<!-- Third Container (Grid) -->
+<div id="section3"class="container-fluid bg-3 text-center">
+  <h3 class="margin">ABOUT US </h3><br>
+  <div class="row">
+    <div class="col-sm-4" >
+        <p class = "p1">Vision</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="col-sm-4">
+        <p class = "p1">Goal</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="col-sm-4">
+         <p class = "p1"> Contact Us </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
 </div>
-<div class="break"></div>
-<div class="post">
-	<p>
-		{{ content }}
-	</p>
-</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Peer Connect Ghana</p>
+</footer>
+
 </body>
 </html>
+
+<!-- source code href="http://www.w3schools.com">www.w3schools.com-->
