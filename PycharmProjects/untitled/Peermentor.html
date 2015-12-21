@@ -14,26 +14,11 @@
         body {
         font: 20px Montserrat, sans-serif;
         line-height: 1.8;
-        color: #f5f6f7;
         }
         p {font-size: 16px;}
         .margin {margin-bottom: 45px;}
-        .bg-1 {
-        background-color: #1abc9c; /* Green */
-        color: #ffffff;
-        }
-        .bg-2 {
-        background-color: #474e5d; /* Dark Blue */
-        color: #ffffff;
-        }
-        .bg-3 {
-        background-color: #ffffff; /* White */
-        color: #555555;
-        }
-        .bg-4 {
-        background-color: #2f2f2f; /* Black Gray */
-        color: #fff;
-        }
+
+
         .container-fluid {
         padding-top: 70px;
         padding-bottom: 70px;
@@ -57,14 +42,37 @@
         font-size: 15px;
         letter-spacing: 5px;
         }
+        li{
+        text-align:left;
+        margin-left:1cm;
+        padding:0px;
+        font-size:15px;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+        }
+        .section1 {
+        background-image:url(grad.jpg);
+        background-position: fixed;
+        background-size: cover;
+        width: 1200px;
+        height:400px;
 
-        #section1 {color: #fff; background-color: #00bcd4;}
-        #section2 {color: #fff; background-color: #673ab7;}
-        #section3 {color: #fff; background-color: #ff9800;}
+        }
+        footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+        }
+
+        #section1 {color: #black; background-color: #ffffff;}
+        #section2 {color: #; background-color: #f2f2f2;}
+        #section21 {color: #; background-color: #f2f2f2;}
+        #section22 {color: #; background-color: #ffffff;}
+        #section3 {color: #; background-color: #f2f2f2;}
 
 
         @media screen and (max-width: 810px) {
-        #section1, #section2, #section3, #section41, #section42 {
+        #section1, #section2, #section3, #section21, #section22 {
         margin-left: 150px;
         }
         }
@@ -77,12 +85,19 @@
   <div class="container">
     <div class="navbar-header">
 
-      <a class="navbar-brand" href="##section1">PEER CONNECT GHANA</a>
+      <a class="navbar-brand" href="#section1">PEER CONNECT GHANA</a>
     </div>
     <div  id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#section1">HOME</a></li>
-        <li><a href="#section2">APPLY NOW</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">APPLY NOW<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="#section21">Eligibility</a></li>
+              <li><a href="#section22">Criteria</a></li>
+              <li><a href="#section42">Apply as a Mentee</a></li>
+              <li><a href="#section42">Apply as a Mentor</a></li>
+            </ul>
+         </li>
         <li><a href="#section3">ABOUT US</a></li>
       </ul>
     </div>
@@ -90,17 +105,54 @@
 </nav>
 
 <!-- First Container -->
-<div id="section1"class="container-fluid bg-1 text-center">
+<div id="section1"class="container-fluid -bg1 text-center">
   <h3 class="margin">PEER CONNECT GHANA</h3>
-  <p> Peer Coonect Ghana is a peer mentoring group amied at......</p>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+    <div class="section1">
+
+        <p style="text-align:left;"> Peer Conect Ghana is a peer mentoring group amied
+            hghfwhkvskjhgljiwhuibhhrwahb..............................</p>
+    </div>
 </div>
 
 <!-- Second Container -->
-<div id="section2"class="container-fluid bg-2 text-center">
-  <h3 class="margin">APPLY NOW </h3>
-    <p  href="http://Mentor_form.html"> Apply as a Mentee</p>
-    <p href="Mentor_form.html">Apply as a Mentor</p>
+<div id="section21"class="container-fluid bg-2 text-center">
+  <h3 class="margin">ELIGIBILITY </h3>
+    <div>
+        <div>
+             <li class="p2">Ghanaian Status
+                <ul>
+                    <li>Applicants must be Ghanaians by birth or naturalization living in Ghana.</li>
+                    <li>Non- Ghanaian applicant must be living in Ghana as of the mentorship period.</li>
+                </ul>
+             </li>
+             <li>Age
+              <ul>
+                <li>Applicant must be 18 years or older.</li>
+              </ul>
+             </li>
+             <li>Academic Standing
+                <ul>
+                 <li>Applicant must have a CGPA of 3.0 or above from an accredited institution</li>
+                </ul>
+             </li>
+             <li>Applicant must as of the start of the mentorship program be enrolled in an accredited tertiary Institution to be part of the program.
+             </li>
+        </div>
+    </div>
+</div>
+<!--Forth container------>
+<div id="section22"class="container-fluid bg-1 text-center">
+  <h3 class="margin">CRITERIA</h3>
+    <div>
+        <p style="text-align:left;"> </p>
+            <li>Applicant must have intention of furthering their education to a higher level.</li>
+            <li>Applicant must be willing to disclose any personal  information  that is critical to this exercise to their mentors.
+                  This will give mentors more insights about the applicants and thus, help in designing topics or areas of discussion that suit specific needs.</li>
+            <li>Applicant must be an active person when it comes to responding to emails or communicating with their mentors.</li>
+            <li>Applicant should be willing to have at least one Skype Call/Meet up  with their mentor each month to review tasks and discuss pressing issues concerning the mentee.</li>
+            <li>Applicants must be willing to serve as mentors after a specified number of years upon completion of their mentorship program.</li>
+
+    </div>
 </div>
 
 <!-- Third Container (Grid) -->
@@ -109,21 +161,21 @@
   <div class="row">
     <div class="col-sm-4" >
         <p class = "p1">Vision</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p></p>
     </div>
     <div class="col-sm-4">
         <p class = "p1">Goal</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p></p>
     </div>
     <div class="col-sm-4">
          <p class = "p1"> Contact Us </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>.</p>
     </div>
   </div>
 </div>
 
 <!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
+<footer class="text-center">
   <p>Peer Connect Ghana</p>
 </footer>
 

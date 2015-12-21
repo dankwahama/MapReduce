@@ -7,7 +7,58 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+     <style>
+         .navbar {
+        padding-top: 15px;
+        padding-bottom: 50px;
+        padding-bottom: 50px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+        color: #1abc9c !important;
+         }
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 511px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 50px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    .middlenav {
+      padding-top: 15px;
+         margin-left: 2cm;
+      background-color: white;
+
+    }
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+         #section1 {color: #fff; background-color: #00bcd4;}
+        #section2 {color: #fff; background-color: #673ab7;}
+        #section3 {color: #fff; background-color: #ff9800;}
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+      #section1, #section2, #section3, #section41, #section42{
+         margin-left: 150px;}
+  </style>
 </head>
+
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-default">
@@ -30,36 +81,81 @@
   </div>
 </nav>
 
-<div class="container">
-  <h2>Horizontal form</h2>
-  <form class="form-horizontal" role="form">
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Email:</label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="email" placeholder="Enter email">
-      </div>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#section2">Eligibilty</a></p>
+      <p><a href="#section2">Criteria</a></p>
+      <p><a href="#">Apply Now</a></p>
     </div>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Password:</label>
-      <div class="col-sm-10">
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-      </div>
+    <div id="section"class="col-sm-8 text-left middlenav">
+      <h1>2016 APPLICATION</h1>
+      <form class="form-horizontal" role="form">
+          <div class="form-group">
+              <label class=" col-sm-8" for="inputlname" >Last Name </label>
+              <input type="text" class="form-control"  id="inputlname" placeholder="Enter Last Name">
+          </div>
+          <div class="form-group">
+              <label class="col-sm-2" >First Name </label>
+              <input type="text" class="form-control"  placeholder="Enter First Name">
+          </div>
+          <div class="form-group">
+              <label class="col-sm-2" >Email </label>
+              <input type="text" class="form-control"  placeholder="Enter Email">
+          </div>
+          <div class="form-group">
+              <label class="col-sm-2" >Phone Number </label>
+              <input type="text" class="form-control"  placeholder="Phone Number">
+          </div>
+          <div class="form-group">
+              <label class="col-sm-2" >City </label>
+              <input type="text" class="form-control"  placeholder="Enter Name of City">
+          </div>
+          <div class="form-group">
+              <label class="col-sm-2" >Region </label>
+              <input type="text" class="form-control"  placeholder="Enter Region">
+          </div>
+          <div class="form-group">
+              <label class="col-sm-2" >Nationaly </label>
+              <input type="text" class="form-control"  placeholder="Nationality">
+          </div>
+          <div class="form-group">
+              <label class="col-sm-5" >Tertiary Institution </label>
+              <input type="text" class="form-control"  placeholder="Enter Name of School">
+          </div>
+          <div class="form-group">
+              <label class="col-sm-5" > Resume </label>
+              <input type="text" class="form-control"  placeholder="Upload Resume">
+          </div>
+          <button type="file" class="btn btn-default start">Select File</button>
+          <button type="upload" class="btn btn-default margin">Upload</button>
+          <button type="delete" class="btn btn-default margin">Delete</button>
+
+          <div class="form-group">
+              <label class="col-sm-8" >Why do you want to be part of this mentoring program? </label>
+              <textarea type="text" class="form-control row-7"  placeholder="Type here"></textarea>
+          </div>
+          <div class="form-group">
+              <label class="col-sm-8" >How many hours in a day do you have access to internet? </label>
+              <input type="text" class="form-control"  placeholder="0">
+          </div>
+          <div class="form-group">
+              <label class="col-sm-8" >How often do you check your email? </label>
+              <input type="text" class="form-control"  placeholder="Select one">
+          </div>
+          <div class="form-group">
+              <label class="col-sm-8" >Are you willing to disclose personal information that is critical t o the program ?  </label>
+              <input type="text" class="form-control"  placeholder="Select one">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <div class="checkbox">
-          <label><input type="checkbox"> Remember me</label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
-      </div>
-    </div>
-  </form>
+  </div>
 </div>
-<footer class="container-fluid bg-4 text-center">
+
+
+<footer class="container-fluid  text-center">
   <p>Peer Connect Ghana</p>
 </footer>
 
