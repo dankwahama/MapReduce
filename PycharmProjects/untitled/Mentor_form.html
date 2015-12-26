@@ -48,14 +48,14 @@
 
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
+    }
+      #section1, #section2, #section3, #section41, #section42{
+         margin-left: 150px;}
       .sidenav {
         height: auto;
         padding: 15px;
       }
       .row.content {height:auto;}
-    }
-      #section1, #section2, #section3, #section41, #section42{
-         margin-left: 150px;}
   </style>
 </head>
 
@@ -92,63 +92,129 @@
     <div id="section"class="col-sm-8 text-left middlenav">
       <h1>2016 APPLICATION</h1>
       <form class="form-horizontal" role="form">
-          <div class="form-group">
-              <label class=" col-sm-8" for="inputlname" >Last Name </label>
+        <div class="row">
+          <div><p>Personal Information</p></div>
+          <div class="form-group col-sm-6" style="margin-right: 1cm;">
+              <label class=" col-sm-6" for="inputlname" >Last Name </label>
               <input type="text" class="form-control"  id="inputlname" placeholder="Enter Last Name">
           </div>
-          <div class="form-group">
-              <label class="col-sm-2" >First Name </label>
+          <div class="form-group col-sm-6">
+              <label class="col-sm-6" >First Name </label>
               <input type="text" class="form-control"  placeholder="Enter First Name">
           </div>
-          <div class="form-group">
-              <label class="col-sm-2" >Email </label>
-              <input type="text" class="form-control"  placeholder="Enter Email">
+        </div>
+        <div class="row">
+          <div class="form-group col-sm-6" style="margin-right:1cm;">
+              <label class="col-sm-6" >Gender </label>
+              <input list="Gender" class="form-control"  placeholder="Gender">
+              <datalist id="Gender" >
+                  <option value="Female">
+                  <option value="Male"></option>
+              </datalist>
           </div>
-          <div class="form-group">
-              <label class="col-sm-2" >Phone Number </label>
-              <input type="text" class="form-control"  placeholder="Phone Number">
+          <div class="form-group col-sm-6">
+              <label class="col-sm-6" >Date of birth </label>
+              <input type="date" class="form-control"  placeholder="yyyy-mm-dd">
           </div>
-          <div class="form-group">
-              <label class="col-sm-2" >City </label>
+        </div>
+        <div class="row">
+          <div class="form-group col-sm-6" style="margin-right:1cm;">
+              <label class="col-sm-6" >Email </label>
+              <input type="email" class="form-control"  placeholder="Enter Email">
+          </div>
+          <div class="form-group col-sm-6" >
+              <label class="col-sm-6" >Phone Number </label>
+              <input type="number" class="form-control"  placeholder="Phone Number">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-sm-6" style="margin-right:1cm;">
+              <label class="col-sm-6" >Nationality </label>
+              <input type="text" class="form-control"  placeholder="Enter Nationality">
+          </div>
+        </div>
+
+        <div class="row">
+        <div><p>Residential Information</p></div>
+          <div class="form-group col-sm-12">
+              <label class="col-sm-6" >Street name/House number </label>
+              <input type="text" class="form-control"  placeholder="Enter name of street and house number">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-sm-6"  style="margin-right:1cm;">
+              <label class="col-sm-6" >City </label>
               <input type="text" class="form-control"  placeholder="Enter Name of City">
           </div>
-          <div class="form-group">
-              <label class="col-sm-2" >Region </label>
+          <div class="form-group col-sm-6">
+              <label class="col-sm-6" >Region </label>
               <input type="text" class="form-control"  placeholder="Enter Region">
           </div>
-          <div class="form-group">
-              <label class="col-sm-2" >Nationaly </label>
+        </div>
+      <div><em>Education</em></div>
+        <div class="row">
+          <div class="form-group col-sm-6" style="margin-right:1cm;">
+              <label class="col-sm-6" >School </label>
+              <input type="text" class="form-control"  placeholder="Enter name of school">
+          </div>
+          <div class="form-group col-sm-6">
+              <label class="col-sm-6" >Course </label>
               <input type="text" class="form-control"  placeholder="Nationality">
           </div>
-          <div class="form-group">
-              <label class="col-sm-5" >Tertiary Institution </label>
-              <input type="text" class="form-control"  placeholder="Enter Name of School">
-          </div>
+        </div>
+        <div class="row">
+           <div class="form-group col-sm-6" style="margin-right:1cm;">
+              <label class="col-sm-6" >CGPA </label>
+              <input type="text" class="form-control"  placeholder="Nationality">
+           </div>
+           <div class="form-group col-sm-6">
+              <label class="col-sm-6" >Year of Graduation </label>
+              <input type="date" class="form-control"  placeholder="yyyy">
+           </div>
+        </div>
+        <div class="row">
+        <div><p>Resume</p></div>
           <div class="form-group">
               <label class="col-sm-5" > Resume </label>
               <input type="text" class="form-control"  placeholder="Upload Resume">
           </div>
-          <button type="file" class="btn btn-default start">Select File</button>
-          <button type="upload" class="btn btn-default margin">Upload</button>
-          <button type="delete" class="btn btn-default margin">Delete</button>
-
-          <div class="form-group">
-              <label class="col-sm-8" >Why do you want to be part of this mentoring program? </label>
+          <div>
+          <button type="file" class="btn btn-default start" style="margin-right:0.5cm;">Select File</button>
+            <button type="upload" class="btn btn-default margin"style="margin-right: 0.5cm;">Upload</button>
+            <button type="delete" class="btn btn-default margin">Delete</button>
+          </div>
+        </div>
+        <div class="row">
+        <div style="margin-top: 0.5cm;"><p> Career Aspirations</div>
+          <div class="form-group" >
+              <label class="col-sm-8" >What is your career goal/objective?  </label>
               <textarea type="text" class="form-control row-7"  placeholder="Type here"></textarea>
           </div>
           <div class="form-group">
-              <label class="col-sm-8" >How many hours in a day do you have access to internet? </label>
-              <input type="text" class="form-control"  placeholder="0">
+              <label class="col-sm-8" >How long do you anticipate would take you to achieve that goal?</label>
+              <textarea type="text" class="form-control row-7"  placeholder="Type here"></textarea>
           </div>
           <div class="form-group">
-              <label class="col-sm-8" >How often do you check your email? </label>
-              <input type="text" class="form-control"  placeholder="Select one">
+              <label class="col-sm-12" >What have you done in the past, doing now, and plans to do in the near future in order to achieve
+                  your career goal?</label>
+              <textarea type="text" class="form-control rwo-7"  placeholder="Type here"></textarea>
           </div>
           <div class="form-group">
-              <label class="col-sm-8" >Are you willing to disclose personal information that is critical t o the program ?  </label>
-              <input type="text" class="form-control"  placeholder="Select one">
+              <label class="col-sm-12" >List your 3 top most strengths. </label>
+              <textarea type="text" class="form-control row-7"  placeholder="Type here"></textarea>
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <div class="form-group">
+              <label class="col-sm-12" >List your 3 top most weaknesses. </label>
+              <textarea type="text" class="form-control row-7"  placeholder="Select one"></textarea>
+          </div>
+          <div class="form-group">
+              <label class="col-sm-12" >This mentorship program is aimed at nurturing young Ghanaians academically and professionally
+                  in order to maximize their potentials in life. As a mentee, what are your expectations for participating in the program.
+                  In other words, which areas of your academic and professional life do you need assistance and guidance with?. </label>
+              <textarea type="text" class="form-control row-7"  placeholder="Select one"></textarea>
+          </div>
+        </div>
+          <button type="submit" class="btn btn-default" style="margin-bottom:0.5cm;">Submit</button>
       </form>
     </div>
   </div>
